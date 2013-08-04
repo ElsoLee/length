@@ -90,13 +90,13 @@ email = 'liran_elso@163.com'
 
 s = []
 
-for k in range(1,12):
+for k in range(1,13):
 	if k == 1:
 		s.append(email + '\n')
 	elif k == 2:
 		s.append('\n')
 	else:
-		s.append(str(results[k - 2]) + ' m' + '\n')
+		s.append(str(results[k - 3]) + ' m' + '\n')
 
 file('./output.txt','w').writelines(s)
 
